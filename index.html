@@ -6,6 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
     <title>Главная</title>
 </head>
 
@@ -15,18 +18,48 @@
             <div class="container">
                 <nav class="menu">
                     <ul class="menu_list">
-                        <li><a href="index.html"><img class="menu_left_img menu_img" src="images/menu_pic1.svg"
-                                    alt="Главная"></a>
+                        <li class="menu_list_li"><a href="index.html"><img class="menu_left_img menu_img"
+                                    src="images/menu_pic1.svg" alt="Главная"></a>
                         </li>
-                        <li><a href="#"><img class="menu_img" src="images/menu_pic2.svg" alt="Поиск"></a></li>
+                        <li class="menu_list_li"><a href="#"><img class="menu_img" src="images/menu_pic2.svg"
+                                    alt="Поиск"></a></li>
                     </ul>
                     <ul class="menu_list">
-                        <li><a href="#"><img class="menu_img" src="images/menu_pic3.svg" alt="Меню"></a></li>
-                        <li><a href="#"><img class="menu_right_img menu_img" src="images/menu_pic4.svg"
-                                    alt="Личный кабинет"></a>
+                        <li class="menu_list_li"><a href="#"><img class="menu_img" src="images/menu_pic3.svg"
+                                    alt="Меню"></a>
+                            <div class="main_menu">
+                                <h3 class="text heading3">MENU</h3>
+                                <div class="main_menu_item">
+                                    <h3 class="text heading3_1">MEN</h3>
+                                    <a class="text main_menu_item_link" href="#">Acessorices</a>
+                                    <a class="text main_menu_item_link" href="#">Bags</a>
+                                    <a class="text main_menu_item_link" href="#">Denim</a>
+                                    <a class="text main_menu_item_link" href="#">T-Shirts</a>
+                                </div>
+                                <div class="main_menu_item">
+                                    <h3 class="text heading3_1">WOMEN</h3>
+                                    <a class="text main_menu_item_link" href="#">Acessorices</a>
+                                    <a class="text main_menu_item_link" href="#">Jackets & Coats</a>
+                                    <a class="text main_menu_item_link" href="#">Polos</a>
+                                    <a class="text main_menu_item_link" href="#">T-Shirts</a>
+                                    <a class="text main_menu_item_link" href="#">Shirts</a>
+                                </div>
+                                <div class="main_menu_item">
+                                    <h3 class="text heading3_1">KIDS</h3>
+                                    <a class="text main_menu_item_link" href="#">Acessorices</a>
+                                    <a class="text main_menu_item_link" href="#">Jackets & Coats</a>
+                                    <a class="text main_menu_item_link" href="#">Polos</a>
+                                    <a class="text main_menu_item_link" href="#">T-Shirts</a>
+                                    <a class="text main_menu_item_link" href="#">Shirts</a>
+                                    <a class="text main_menu_item_link" href="#">Bags</a>
+                                </div>
+                            </div>
                         </li>
-                        <li><a href="#"><img class="menu_right_img menu_img" src="images/menu_pic5.svg"
-                                    alt="Корзина"></a>
+                        <li class="menu_list_li"><a href="#"><img class="menu_right_img menu_img"
+                                    src="images/menu_pic4.svg" alt="Личный кабинет"></a>
+                        </li>
+                        <li class="menu_list_li"><a href="#"><img class="menu_right_img menu_img"
+                                    src="images/menu_pic5.svg" alt="Корзина"></a>
                         </li>
                     </ul>
                 </nav>
@@ -34,7 +67,6 @@
         </div>
         <div class="header_main">
             <div class="header_main_left">
-                <img src="images/header_main_img.png" alt="Man">
             </div>
             <div class="header_main_right">
                 <div class="header_main_text">
@@ -130,10 +162,9 @@
                         <p class="text footer_middle_subscribe_text_heading">SUBSCRIBE</p>
                         <p class="text footer_middle_subscribe_text">FOR OUR NEWLETTER AND PROMOTION</p>
                         <form class="input">
-                            <input type="email" class="input_area" placeholder=" Enter Your Email">
+                            <input type="email" class="text input_area" placeholder=" Enter Your Email">
                             <button type="submit" class="text button">Subscribe</button>
                         </form>
-
                     </div>
                 </div>
             </div>
