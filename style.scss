@@ -87,6 +87,11 @@
     justify-content: center;
 }
 
+.header_img {
+    width: 100%;
+    height: auto;
+}
+
 .header_main_right {
     display: flex;
     align-items: center;
@@ -558,6 +563,7 @@
 .menu_list_li:hover .main_menu {
     display: flex;
     flex-direction: column;
+    z-index: 101;
 }
 
 .heading3 {
