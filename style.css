@@ -992,10 +992,12 @@ summary::after {
 }
 
 .discription_details_text {
+  text-transform: uppercase;
   font-weight: 400;
   font-size: 14px;
   line-height: 17px;
   color: #6F6E6E;
+  position: relative;
 }
 
 .extra {
@@ -1017,6 +1019,10 @@ summary::after {
           align-items: center;
 }
 
+.add_button:hover {
+  background-color: #FF6A6A;
+}
+
 .product_add_txt {
   font-weight: 400;
   font-size: 16px;
@@ -1025,7 +1031,197 @@ summary::after {
   margin-left: 23px;
 }
 
+.add_button:hover .product_add_txt {
+  color: #fff;
+}
+
 .product_add_pic {
   display: block;
+}
+
+.add_button:hover .product_add_pic {
+  -webkit-filter: grayscale(1) brightness(1000%);
+          filter: grayscale(1) brightness(1000%);
+}
+
+.filters {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+
+.filter_burger {
+  margin-top: 51px;
+  margin-bottom: 64px;
+  margin-left: 16px;
+}
+
+.filter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-decoration: none;
+  position: relative;
+}
+
+.filter_text {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  color: #000000;
+  margin-right: 11px;
+}
+
+.filter_menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 13px;
+  padding-bottom: 16px;
+  -webkit-box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+          box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+  position: absolute;
+  top: 37px;
+  left: -1px;
+  background-color: #fff;
+  visibility: hidden;
+  z-index: 100;
+}
+
+.filter_burger:hover .filter_menu {
+  visibility: visible;
+}
+
+.filter_menu_title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.filter_menu_subtitle {
+  width: 328px;
+  height: 37px;
+  border-left: 5px solid #EF5B70;
+  border-bottom: 1px solid #EBEBEB;
+  padding-left: 11px;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 37px;
+  color: #EF5B70;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+.filter_menu_link {
+  display: block;
+  padding-top: 5.5px;
+  padding-bottom: 5.5px;
+  padding-left: 17px;
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #6F6E6E;
+}
+
+.catalog_choises {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.catalog_details {
+  padding-left: 3px;
+  padding-right: 3px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.sizes {
+  position: absolute;
+  list-style-type: none;
+  padding: 10px;
+  background-color: #fff;
+  -webkit-box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+          box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+  z-index: 100;
+}
+
+.size_variant {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #6F6E6E;
+}
+
+.size_variant:not(:last-of-type) {
+  margin-bottom: 10px;
+}
+
+.catalog_checkbox {
+  margin-right: 10px;
+}
+
+.catalog_pag {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 49px;
+  margin-bottom: 96px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.pagination {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style-type: none;
+  padding: 15px 7px;
+  border: 1px solid #EBEBEB;
+}
+
+.pag_link {
+  text-decoration: none;
+  margin-left: 9px;
+  margin-right: 9px;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  color: #c4c4c4;
+}
+
+.pag_arrow {
+  font-size: 29px;
+  color: #000;
+}
+
+.pag_link:hover {
+  color: #EF5B70;
+}
+
+.pag_arrow:hover {
+  color: #EF5B70;
 }
 /*# sourceMappingURL=style.css.map */
