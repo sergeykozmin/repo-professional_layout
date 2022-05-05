@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/adfe153c5b.js" crossorigin="anonymous"></script>
-    <title>Товар</title>
+    <title>Регистрация</title>
 </head>
 
 <body>
@@ -66,126 +66,47 @@
                 </nav>
             </div>
         </div>
-        <div class="header_nav">
+        <div class="header_name">
             <div class="container">
-                <div class="header_nav_blocks">
-                    <p class="text product_nav_text">New Arrivals</p>
-                    <ul class="breadcrumb">
-                        <li><a class="text breadcrumb_li" href="#">Home</a></li>
-                        <li><a class="text breadcrumb_li" href="#">Men</a></li>
-                        <li class="text breadcrumb_li">New Arrivals</li>
-                    </ul>
-                </div>
+                <p class="text product_nav_text">Registration</p>
             </div>
         </div>
     </div>
-    <div class="content_product">
-        <div class="slider">
-            <a class="arrow_box">
-                <div class="arrow_left"></div>
-            </a>
-            <img class="product_img" src="images/product_photo.svg" alt="Photo">
-            <a class="arrow_box">
-                <div class="arrow_right"></div>
-            </a>
-        </div>
-
-    </div>
-    <div class="discription">
-        <div class="container">
-            <div class="product_discription">
-                <p class="text discription_name">Women collection</p>
-                <div class="line"></div>
-                <p class="text discription_heading">MOSCHINO CHEAP AND CHIC</p>
-                <p class="text discription_text">Compellingly actualize fully researched processes before proactive
-                    outsourcing.
-                    Progressively syndicate collaborative architectures before cutting-edge services. Completely
-                    visualize parallel core competencies rather than exceptional portals.</p>
-                <p class="text discription_price">$ 561</p>
-                <hr style="width: 641px; align-self: center; margin-bottom: 65px;">
-                <div class="choises">
-                    <div class="color">
-                        <details>
-                            <summary class="text discription_details_text">CHOOSE COLOR</summary>
-                        </details>
-                    </div>
-                    <div class="size">
-                        <details>
-                            <summary class="text discription_details_text">SIZE</summary>
-                        </details>
-                    </div>
-                    <div class="quantity">
-                        <details>
-                            <summary class="text discription_details_text extra">QUANTITY</summary>
-                        </details>
-                    </div>
-                </div>
-                <a class="add_button" href="#">
-                    <img class="product_add_pic" src="images/product_cart.png" alt="cart">
-                    <p class="text product_add_txt">Add to cart</p>
-                </a>
+    <div class="container content_reg">
+        <form class="reg_form">
+            <p class="text form_heading">Your Name</p>
+            <input type="text" class="text form_text_input" placeholder="First Name">
+            <br>
+            <input type="text" class="text form_text_input" placeholder="Last Name">
+            <div class="sex">
+                <input type="radio" name="sex" class="radio_box" checked>
+                <p class="text radio_text">Male</p>
+                <input type="radio" name="sex" class="radio_box">
+                <p class="text radio_text">Female</p>
             </div>
-            <section>
-                <div class="items_product">
-                    <div class="item">
-                        <a class="item_link" href="#">
-                            <img class="item_pic" src="images/product4.png" alt="товар">
-                            <div class="txt_box">
-                                <h5 class="text heading5">ELLERY X M'O CAPSULE</h5>
-                                <p class="text item_text"> Known for her sculptural takes on traditional tailoring,
-                                    Australian
-                                    arbiter of cool
-                                    Kym Ellery teams up with Moda Operandi.</p>
-                                <h4 class="text heading4">$52.00</h4>
-                            </div>
-                        </a>
-                        <div class="add_box">
-                            <a class="add" href="#">
-                                <img class="add_pic" src="images/cart.svg" alt="cart">
-                                <p class="text add_txt">Add to cart</p>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <a class="item_link" href="#">
-                            <img class="item_pic" src="images/product3.png" alt="товар">
-                            <div class="txt_box">
-                                <h5 class="text heading5">ELLERY X M'O CAPSULE</h5>
-                                <p class="text item_text"> Known for her sculptural takes on traditional tailoring,
-                                    Australian
-                                    arbiter of cool
-                                    Kym Ellery teams up with Moda Operandi.</p>
-                                <h4 class="text heading4">$52.00</h4>
-                            </div>
-                        </a>
-                        <div class="add_box">
-                            <a class="add" href="#">
-                                <img class="add_pic" src="images/cart.svg" alt="cart">
-                                <p class="text add_txt">Add to cart</p>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <a class="item_link" href="#">
-                            <img class="item_pic" src="images/product6.png" alt="товар">
-                            <div class="txt_box">
-                                <h5 class="text heading5">ELLERY X M'O CAPSULE</h5>
-                                <p class="text item_text"> Known for her sculptural takes on traditional tailoring,
-                                    Australian
-                                    arbiter of cool
-                                    Kym Ellery teams up with Moda Operandi.</p>
-                                <h4 class="text heading4">$52.00</h4>
-                            </div>
-                        </a>
-                        <div class="add_box">
-                            <a class="add" href="#">
-                                <img class="add_pic" src="images/cart.svg" alt="cart">
-                                <p class="text add_txt">Add to cart</p>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </section>
+            <p class="text form_heading">Login details</p>
+            <input type="email" class="text form_text_input" placeholder="Email">
+            <br>
+            <input type="password" class="text form_text_input" placeholder="Password" aria-describedby="pw-help">
+            <div id="pw-help" class="text password_help">
+                Please use 8 or more characters, with at least 1 number and a mixture of uppercase and lowercase
+                letters
+            </div>
+            <button type="submit" class="text reg_form_button">Join us<span
+                    style="margin-left: 20px;">&rarr;</span></button>
+        </form>
+        <div class="content_reg_article">
+            <p class="text content_reg_text">LOYALTY HAS ITS PERKS</p>
+            <p class="text content_reg_text">Get in on the loyalty program where you can earn points and unlock serious
+                perks. Starting
+                with these as soon as you join:</p>
+            <ul class="content_reg_li">
+                <li class="text content_reg_li_text">15% off welcome offer</li>
+                <li class="text content_reg_li_text">Free shipping, returns and exchanges on all orders </li>
+                <li class="text content_reg_li_text">$10 off a purchase on your birthday</li>
+                <li class="text content_reg_li_text">Early access to products</li>
+                <li class="text content_reg_li_text">Exclusive offers & rewards</li>
+            </ul>
         </div>
     </div>
     <div class="footer">
@@ -226,8 +147,6 @@
             </div>
         </div>
     </div>
-
-
 </body>
 
 </html>
