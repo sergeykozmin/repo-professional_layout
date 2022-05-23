@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/adfe153c5b.js" crossorigin="anonymous"></script>
-    <title>Главная</title>
+    <title>Каталог</title>
 </head>
 
 <body>
@@ -66,56 +66,79 @@
                 </nav>
             </div>
         </div>
-        <div class="header_main">
+        <div class="header_nav">
             <div class="container">
-                <div class="header_main_blocks">
-                    <div class="header_main_left">
-                        <img class="header_img" src="images/header_main_img.png" alt="Model">
-                    </div>
-                    <div class="header_main_right">
-                        <div class="header_main_text">
-                            <h1 class="text header_text_h1">THE BRAND</h1>
-                            <p class="text header_text">OF LUXERIOUS <span class="text_pink">FASHION</span>
-                            </p>
-                        </div>
-                    </div>
+                <div class="header_nav_blocks">
+                    <p class="text product_nav_text">New Arrivals</p>
+                    <ul class="breadcrumb">
+                        <li><a class="text breadcrumb_li" href="#">Home</a></li>
+                        <li><a class="text breadcrumb_li" href="#">Men</a></li>
+                        <li class="text breadcrumb_li">New Arrivals</li>
+                    </ul>
                 </div>
             </div>
         </div>
     </div>
-    <div class="content_index">
+    <div class="content_catalog">
         <div class="container">
-            <div class="men_women_kids">
-                <a class="women" href="#">
-                    <div class="men_women_kids_text">
-                        <p class="text text_chapter">30% OFF</p>
-                        <p class="text text_chapter_2 text_pink">FOR WOMEN</p>
+            <div class="filters">
+                <div class="filter_burger">
+                    <a href="#" class="filter">
+                        <p class="text filter_text">Filter</p>
+                        <img src="images/filter.svg" alt="Filter">
+                    </a>
+                    <div class="filter_menu">
+                        <div class="filter_menu_title">
+                            <p class="text filter_text">Filter</p>
+                            <img src="images/filter.svg" alt="Filter">
+                        </div>
+                        <div class="filter_submenu">
+                            <p class="text filter_menu_subtitle">Category</p>
+                            <div class="subtitle_menu">
+                                <a class="text filter_menu_link" href="#">Acessorices</a>
+                                <a class="text filter_menu_link" href="#">Bags</a>
+                                <a class="text filter_menu_link" href="#">Denim</a>
+                                <a class="text filter_menu_link" href="#">Hoodies & Sweatshirts</a>
+                                <a class="text filter_menu_link" href="#">Jackets & Coats</a>
+                                <a class="text filter_menu_link" href="#">Polos</a>
+                                <a class="text filter_menu_link" href="#">Shirts</a>
+                                <a class="text filter_menu_link" href="#">Shoes</a>
+                                <a class="text filter_menu_link" href="#">Sweaters & Knits</a>
+                                <a class="text filter_menu_link" href="#">T-Shirts</a>
+                                <a class="text filter_menu_link" href="#">Tanks</a>
+                            </div>
+                        </div>
+
+                        <p class="text filter_menu_subtitle">Brand</p>
+                        <p class="text filter_menu_subtitle">Designer</p>
                     </div>
-                </a>
-                <a class="men" href="catalog.html" target="_blank">
-                    <div class="men_women_kids_text">
-                        <p class="text text_chapter">HOT DEAL</p>
-                        <p class="text text_chapter_2 text_pink">FOR MEN</p>
+                </div>
+                <div class="catalog_choises">
+                    <div class="catalog_details">
+                        <details>
+                            <summary class="text discription_details_text">Trending Now</summary>
+                        </details>
                     </div>
-                </a>
-                <a class="kids" href="#">
-                    <div class="men_women_kids_text">
-                        <p class="text text_chapter">NEW ARRIVALS</p>
-                        <p class="text text_chapter_2 text_pink">FOR KIDS</p>
+                    <div class="catalog_details">
+                        <details>
+                            <summary class="text discription_details_text">Size</summary>
+                            <ul class="sizes">
+                                <li class="text size_variant"><input class="catalog_checkbox" type="checkbox">XS</li>
+                                <li class="text size_variant"><input class="catalog_checkbox" type="checkbox">S</li>
+                                <li class="text size_variant"><input class="catalog_checkbox" type="checkbox">M</li>
+                                <li class="text size_variant"><input class="catalog_checkbox" type="checkbox">L</li>
+                                <li class="text size_variant"><input class="catalog_checkbox" type="checkbox">XL</li>
+                            </ul>
+                        </details>
                     </div>
-                </a>
+                    <div class="catalog_details">
+                        <details>
+                            <summary class="text discription_details_text extra">Price</summary>
+                        </details>
+                    </div>
+                </div>
             </div>
-            <a class="accesorises" href="#">
-                <div class="men_women_kids_text">
-                    <p class="text text_chapter">LUXERIOUS & TRENDY</p>
-                    <p class="text text_chapter_2 text_pink">ACCESORISES</p>
-                </div>
-            </a>
             <section>
-                <div class="fetured_items">
-                    <h2 class="text heading2">Fetured Items</h2>
-                    <p class="text fetured_items_text">Shop for items based on what we featured in this week</p>
-                </div>
                 <div class="items">
                     <div class="item">
                         <a class="item_link" href="product.html" target="_blank">
@@ -138,7 +161,7 @@
                     </div>
                     <div class="item">
                         <a class="item_link" href="#">
-                            <img class="item_pic" src="images/product2.png" alt="товар">
+                            <img class="item_pic" src="images/product7.png" alt="товар">
                             <div class="txt_box">
                                 <h5 class="text heading5">ELLERY X M'O CAPSULE</h5>
                                 <p class="text item_text"> Known for her sculptural takes on traditional tailoring,
@@ -195,7 +218,7 @@
                     </div>
                     <div class="item">
                         <a class="item_link" href="#">
-                            <img class="item_pic" src="images/product5.png" alt="товар">
+                            <img class="item_pic" src="images/product8.png" alt="товар">
                             <div class="txt_box">
                                 <h5 class="text heading5">ELLERY X M'O CAPSULE</h5>
                                 <p class="text item_text"> Known for her sculptural takes on traditional tailoring,
@@ -214,7 +237,64 @@
                     </div>
                     <div class="item">
                         <a class="item_link" href="#">
-                            <img class="item_pic" src="images/product6.png" alt="товар">
+                            <img class="item_pic" src="images/product9.png" alt="товар">
+                            <div class="txt_box">
+                                <h5 class="text heading5">ELLERY X M'O CAPSULE</h5>
+                                <p class="text item_text"> Known for her sculptural takes on traditional tailoring,
+                                    Australian
+                                    arbiter of cool
+                                    Kym Ellery teams up with Moda Operandi.</p>
+                                <h4 class="text heading4">$52.00</h4>
+                            </div>
+                        </a>
+                        <div class="add_box">
+                            <a class="add" href="#">
+                                <img class="add_pic" src="images/cart.svg" alt="cart">
+                                <p class="text add_txt">Add to cart</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <a class="item_link" href="#">
+                            <img class="item_pic" src="images/product10.png" alt="товар">
+                            <div class="txt_box">
+                                <h5 class="text heading5">ELLERY X M'O CAPSULE</h5>
+                                <p class="text item_text"> Known for her sculptural takes on traditional tailoring,
+                                    Australian
+                                    arbiter of cool
+                                    Kym Ellery teams up with Moda Operandi.</p>
+                                <h4 class="text heading4">$52.00</h4>
+                            </div>
+                        </a>
+                        <div class="add_box">
+                            <a class="add" href="#">
+                                <img class="add_pic" src="images/cart.svg" alt="cart">
+                                <p class="text add_txt">Add to cart</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <a class="item_link" href="#">
+                            <img class="item_pic" src="images/product11.png" alt="товар">
+                            <div class="txt_box">
+                                <h5 class="text heading5">ELLERY X M'O CAPSULE</h5>
+                                <p class="text item_text"> Known for her sculptural takes on traditional tailoring,
+                                    Australian
+                                    arbiter of cool
+                                    Kym Ellery teams up with Moda Operandi.</p>
+                                <h4 class="text heading4">$52.00</h4>
+                            </div>
+                        </a>
+                        <div class="add_box">
+                            <a class="add" href="#">
+                                <img class="add_pic" src="images/cart.svg" alt="cart">
+                                <p class="text add_txt">Add to cart</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <a class="item_link" href="#">
+                            <img class="item_pic" src="images/product12.png" alt="товар">
                             <div class="txt_box">
                                 <h5 class="text heading5">ELLERY X M'O CAPSULE</h5>
                                 <p class="text item_text"> Known for her sculptural takes on traditional tailoring,
@@ -232,8 +312,21 @@
                         </div>
                     </div>
                 </div>
-                <a class="product_button text" href="catalog.html" target="_blank">Browse All Product</a>
             </section>
+            <nav class="catalog_pag">
+                <ul class="pagination">
+                    <li><a class="text pag_link pag_arrow" href="#">&lt;</a></li>
+                    <li><a class="text pag_link" href="#">1</a></li>
+                    <li><a class="text pag_link" href="#">2</a></li>
+                    <li><a class="text pag_link" href="#">3</a></li>
+                    <li><a class="text pag_link" href="#">4</a></li>
+                    <li><a class="text pag_link" href="#">5</a></li>
+                    <li><a class="text pag_link" href="#">6</a></li>
+                    <li><a class="text pag_link" href="#">&hellip;</a></li>
+                    <li><a class="text pag_link" href="#">20</a></li>
+                    <li><a class="text pag_link pag_arrow" href="#">&gt;</a></li>
+                </ul>
+            </nav>
         </div>
     </div>
     <div class="footer">
