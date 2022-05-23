@@ -225,6 +225,11 @@
 .men_women_kids_text {
     position: relative;
     z-index: 100;
+    transition: transform 1s;
+}
+
+.men_women_kids_text:hover {
+    transform: rotate(360deg);
 }
 
 .text_chapter {
@@ -291,6 +296,7 @@
 
 .item_pic {
     width: 100%;
+    transition: filter 0.2s;
 }
 
 .item_link {
@@ -327,10 +333,12 @@
     padding: 11px;
     border: 1px solid #fff;
     pointer-events: all;
+    transition: all 0.5s;
 }
 
 .add:hover {
     box-shadow: 0 0 10px #fff;
+    transform: scale(1.2);
 }
 
 .add_txt {
@@ -353,11 +361,15 @@
     font-size: 16px;
     line-height: 47px;
     color: #F26376;
+    transition: color 0.2s;
+    transition: background-color 0.2s;
+    transition: transform 0.2s;
 }
 
 .product_button:hover {
     background-color: #F16D7F;
     color: #ffffff;
+    transform: scale(1.1);
 }
 
 .footer_top {
@@ -509,6 +521,8 @@
     text-align: center;
     color: #FFFFFF;
     padding: 7px;
+    transition: color 0.2s;
+    transition: background-color 0.2s;
 }
 
 .button:hover {
@@ -612,6 +626,8 @@
     align-items: center;
     text-decoration: none;
     color: #000;
+    transition: color 0.2s;
+    transition: background-color 0.2s;
 }
 
 .icon_link:hover {
@@ -838,6 +854,7 @@ summary::after {
     border: 1px solid #FF6A6A;
     text-decoration: none;
     align-items: center;
+    transition: background-color 0.2s;
 }
 
 .add_button:hover {
@@ -850,6 +867,7 @@ summary::after {
     line-height: 19px;
     color: #F26376;
     margin-left: 23px;
+    transition: color 0.2s;
 }
 
 .add_button:hover .product_add_txt {
@@ -928,7 +946,15 @@ summary::after {
     box-sizing: border-box;
     margin-top: 16px;
     margin-bottom: 16px;
+}
 
+.subtitle_menu {
+    display: none;
+}
+
+.filter_submenu:hover .subtitle_menu {
+    display: flex;
+    flex-direction: column;
 }
 
 .filter_menu_link {
@@ -941,6 +967,10 @@ summary::after {
     font-size: 14px;
     line-height: 17px;
     color: #6F6E6E;
+}
+
+.filter_menu_link:hover {
+    color: #EF5B70;   
 }
 
 .catalog_choises {
@@ -1090,6 +1120,8 @@ summary::after {
     color: #fff;
     background-color: #F16D7F;
     border: 1px solid #F16D7F;
+    transition: color 0.2s;
+    transition: background-color 0.2s;
 }
 
 .reg_form_button:hover {
