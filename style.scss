@@ -112,18 +112,29 @@
     justify-content: space-between;
 }
 
-.women {
+.women, .men, .kids {
     display: block;
     position: relative;
-    width: calc(1/3*100% - (1-1/3)*30px);
+    width: 32%;
     height: 260px;
-    background-image: url(images/Women.svg);
     background-size: cover;
     background-position: center;
     display: flex;
     align-items: center;
     justify-content: center;
     text-decoration: none;
+}
+
+.women {
+    background-image: url(images/Women.svg);
+}
+
+.men {
+    background-image: url(images/Men.svg);
+}
+
+.kids {
+    background-image: url(images/Kids.svg);
 }
 
 .women::before {
@@ -139,20 +150,6 @@
     background-color: rgba(33, 22, 22, 0.7);
 }
 
-.men {
-    display: block;
-    position: relative;
-    width: calc(1/3*100% - (1-1/3)*30px);
-    height: 260px;
-    background-image: url(images/Men.svg);
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-decoration: none;
-}
-
 .men::before {
     content: '';
     display: block;
@@ -166,20 +163,6 @@
     background-color: rgba(33, 22, 22, 0.7);
 }
 
-.kids {
-    display: block;
-    position: relative;
-    width: calc(1/3*100% - (1-1/3)*30px);
-    height: 260px;
-    background-image: url(images/Kids.svg);
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-decoration: none;
-}
-
 .kids::before {
     content: '';
     display: block;
@@ -191,6 +174,18 @@
     right: 0;
     bottom: 0;
     background-color: rgba(33, 22, 22, 0.7);
+}
+
+.women:hover::before {
+    display: none;
+}
+
+.men:hover::before {
+    display: none;
+}
+
+.kids:hover::before {
+    display: none;
 }
 
 .accesorises {
@@ -222,14 +217,13 @@
     background-color: rgba(33, 22, 22, 0.7);
 }
 
+.accesorises:hover::before {
+    display: none;
+}
+
 .men_women_kids_text {
     position: relative;
     z-index: 100;
-    transition: transform 1s;
-}
-
-.men_women_kids_text:hover {
-    transform: rotate(360deg);
 }
 
 .text_chapter {
@@ -276,7 +270,7 @@
 }
 
 .item {
-    width: 360px;
+    width: 32%;
     background-color: #F8F8F8;
     margin-bottom: 30px;
     position: relative;
@@ -373,19 +367,19 @@
 }
 
 .footer_top {
-    height: 340px;
     background-color: #222224;
 }
 
 .footer_top_features {
     display: flex;
     justify-content: space-between;
-    height: 340px;
     align-items: center;
+    padding-top: 104px;
+    padding-bottom: 104px;
 }
 
 .feature {
-    width: 360px;
+    width: 32%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -415,7 +409,8 @@
 .footer_middle {
     position: relative;
     width: 100%;
-    height: 448px;
+    padding-top: 87px;
+    padding-bottom: 126px;
     background-image: url(images/footer_bg.png);
     background-size: cover;
     background-position: center;
@@ -535,10 +530,11 @@
 }
 
 .footer_bottom_content {
-    height: 79px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-top: 24px;
+    padding-bottom: 24px;
 }
 
 .footer_bottom_text {
@@ -1339,4 +1335,208 @@ summary::after {
     text-align: center;
     text-decoration: none;
     color: #FFFFFF;
+    border: 2px solid #F5F3F3;
+}
+
+.amount_button:hover {
+    border: 2px solid #000;
+    color: #000000;
+}
+
+@media (max-width: 1140px) {
+    .menu {
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+}
+
+@media (max-width: 768px) {
+    .header_text_h1 {
+        font-size: 44px;
+        line-height: 53px;
+    }
+
+    .header_text {
+        font-size: 24px;
+        line-height: 29px;
+    }
+
+    .header_main_text {
+        margin-left: 39px;
+    }
+
+    .content_index {
+        padding-top: 20px;
+    }
+
+    .men_women_kids {
+        width: 96%;
+        margin: 0 auto;
+    }
+
+    .women, .men, .kids {
+        height: 168px;
+    }
+
+    .accesorises {
+        margin: 20px auto 155px;
+        width: 96%;
+        height: 116px;
+        
+    }
+
+    .fetured_items {
+        margin-bottom: 73px;
+    }
+
+    .items {
+        margin: 0 auto;
+        width: 96%;
+    }
+
+    .item {
+        width: 49%;
+        margin-bottom: 17px;
+    }
+
+    .product_button {
+        margin: 33px auto 65px;
+    }
+
+    .footer_top_features {
+        padding-top: 48px;
+        padding-bottom: 16px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .feature {
+        margin-bottom: 48px;
+    }
+
+    .footer_middle {
+        padding-top: 54px;
+        padding-bottom: 140px;
+    }
+
+    .footer_middle_content {
+       flex-direction: column;
+       margin: 0 auto;
+    }
+
+    .footer_middle_comment {
+        width: 47%;
+        margin: 0 auto 48px;
+    }
+
+    .footer_middle_subscribe {
+        width: 100%;
+    }
+
+    .footer_middle_subscribe_text {
+        margin-bottom: 27px;
+    }
+
+    .footer_bottom_content {
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+}
+
+@media (max-width: 375px) {
+    .menu {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+    
+    .menu_list_li_iphone {
+        display: none;
+    }
+
+    .header_main_left {
+        display: none;
+    }
+
+    .header_main_text {
+        margin-left: 0px;
+        padding-left: 15px;
+        margin-top: 148px;
+        margin-bottom: 148px;
+    }
+
+    .header_text_h1 {
+        font-size: 38px;
+        line-height: 46px;
+    }
+
+    .header_text {
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    .men_women_kids {
+        width: 92%;
+        margin: 0 auto;
+        flex-direction: column;
+    }
+
+    .women, .men, .kids {
+        width: 100%;
+        height: 247px;
+        margin-bottom: 32px;
+    }
+
+    .accesorises {
+        margin: 0px auto 64px;
+        width: 92%;
+        height: 111px;
+    }
+
+    .fetured_items {
+        margin-bottom: 65px;
+    }
+
+    .item {
+        width: 100%;
+    }
+
+    .product_button {
+        margin: 41px auto 97px;
+    }
+
+    .footer_top_features {
+        padding-bottom: 34px;
+    }
+
+    .feature {
+        width: 93%;
+    }
+
+    .footer_middle {
+        padding-bottom: 110px;
+    }
+
+    .footer_middle_content {
+        margin: 16px auto;
+    }
+
+    .footer_middle_comment {
+        width: 92%;
+        margin: 0 auto 59px;
+    }
+
+    .footer_middle_subscribe_text {
+        margin-bottom: 22px;
+        font-size: 14px;
+        line-height: 21px;
+    }
+
+    .footer_bottom_content {
+       flex-direction: column-reverse;
+    }
+
+    .footer_bottom_text {
+        margin-top: 40px;
+    }
+
 }
