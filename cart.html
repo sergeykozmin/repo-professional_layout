@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/adfe153c5b.js" crossorigin="anonymous"></script>
+    <title>Корзина</title>
+</head>
+
+<body>
+    <div class="header">
+        <div class="header_top">
+            <div class="container">
+                <nav class="menu">
+                    <ul class="menu_list">
+                        <li class="menu_list_li"><a href="index.html"><img class="menu_left_img menu_img"
+                                    src="images/menu_pic1.svg" alt="Главная"></a>
+                        </li>
+                        <li class="menu_list_li"><a href="#"><img class="menu_img" src="images/menu_pic2.svg"
+                                    alt="Поиск"></a></li>
+                    </ul>
+                    <ul class="menu_list">
+                        <li class="menu_list_li"><a href="#"><img class="menu_img" src="images/menu_pic3.svg"
+                                    alt="Меню"></a>
+                            <div class="main_menu">
+                                <h3 class="text heading3">MENU</h3>
+                                <div class="main_menu_item">
+                                    <h3 class="text heading3_1">MEN</h3>
+                                    <a class="text main_menu_item_link" href="#">Acessorices</a>
+                                    <a class="text main_menu_item_link" href="#">Bags</a>
+                                    <a class="text main_menu_item_link" href="#">Denim</a>
+                                    <a class="text main_menu_item_link" href="#">T-Shirts</a>
+                                </div>
+                                <div class="main_menu_item">
+                                    <h3 class="text heading3_1">WOMEN</h3>
+                                    <a class="text main_menu_item_link" href="#">Acessorices</a>
+                                    <a class="text main_menu_item_link" href="#">Jackets & Coats</a>
+                                    <a class="text main_menu_item_link" href="#">Polos</a>
+                                    <a class="text main_menu_item_link" href="#">T-Shirts</a>
+                                    <a class="text main_menu_item_link" href="#">Shirts</a>
+                                </div>
+                                <div class="main_menu_item">
+                                    <h3 class="text heading3_1">KIDS</h3>
+                                    <a class="text main_menu_item_link" href="#">Acessorices</a>
+                                    <a class="text main_menu_item_link" href="#">Jackets & Coats</a>
+                                    <a class="text main_menu_item_link" href="#">Polos</a>
+                                    <a class="text main_menu_item_link" href="#">T-Shirts</a>
+                                    <a class="text main_menu_item_link" href="#">Shirts</a>
+                                    <a class="text main_menu_item_link" href="#">Bags</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="menu_list_li"><a href="registration.html" target="_blank"><img
+                                    class="menu_right_img menu_img" src="images/menu_pic4.svg" alt="Личный кабинет"></a>
+                        </li>
+                        <li class="menu_list_li"><a href="cart.html" target="_blank"><img
+                                    class="menu_right_img menu_img" src="images/menu_pic5.svg" alt="Корзина"></a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="header_name">
+            <div class="container">
+                <p class="text product_nav_text">Shopping cart</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="cart_content container">
+        <div class="cart_items">
+            <div class="cart_item">
+                <a href="#" class="cart_item_link">
+                    <img src="images/product3.png" class="cart_item_img" alt="Товар">
+                    <div class="cart_item_discription">
+                        <p class="text cart_item_heading"> Mango people<br>t-shirt
+                        </p>
+                        <ul class="cart_item_property">
+                            <li class="text property_text">Price: <span style="color: #F16D7F;">$300</span></li>
+                            <li class="text property_text">Color: Red</li>
+                            <li class="text property_text">Size: XL</li>
+                            <li class="text property_text">Quantity</li>
+                        </ul>
+                    </div>
+                </a>
+                <a href="#" class="cross">
+                    <img src="images/cross.png" alt="Закрыть">
+                </a>
+            </div>
+            <div class="cart_item">
+                <a href="#" class="cart_item_link">
+                    <img src="images/product7.png" class="cart_item_img" alt="Товар">
+                    <div class="cart_item_discription">
+                        <p class="text cart_item_heading"> Mango people<br>t-shirt
+                        </p>
+                        <ul class="cart_item_property">
+                            <li class="text property_text">Price <span style="color: #F16D7F;">$300</span></li>
+                            <li class="text property_text">Color: Red</li>
+                            <li class="text property_text">Size: XL</li>
+                            <li class="text property_text">Quantity</li>
+                        </ul>
+                    </div>
+                </a>
+                <a href="#" class="cross">
+                    <img src="images/cross.png" alt="Закрыть">
+                </a>
+            </div>
+            <div class="cart_items_buttons">
+                <a href="#" class="text cart_items_button">Clear shopping cart</a>
+                <a href="#" class="text cart_items_button">Continue shopping</a>
+            </div>
+        </div>
+        <div class="cart_forms">
+            <form class="shipping_form">
+                <p class="text form_heading">Shipping adress</p>
+                <input type="text" class="text form_text_input" placeholder="Russian Federation">
+                <br>
+                <input type="text" class="text form_text_input" placeholder="State">
+                <br>
+                <input type="text" class="text form_text_input" placeholder="Postcode / Zip">
+                <br>
+                <button type="submit" class="text shipping_form_button">Get a quote</button>
+            </form>
+            <div class="amount">
+                <div class="amount_type">
+                    <p class="text sub_heading">sub total <span style="margin-left: 15px;">$900</span></p>
+                    <p class="text grand_heading">grand total <span
+                            style="margin-left: 15px; color: #F16D7F;">$900</span></p>
+                </div>
+                <div class="amount_line"></div>
+                <a href="#" class="text amount_button">proceed to checkout</a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+    <div class="footer">
+        <div class="footer_middle">
+            <div class="container">
+                <div class="footer_middle_content">
+                    <div class="footer_middle_comment">
+                        <img src="images/Photo.png" alt="Photo">
+                        <p class="text footer_miidle_comment_text">“Vestibulum quis porttitor dui! Quisque viverra nunc
+                            mi, <i>a pulvinar purus condimentum“</i>
+                        </p>
+                    </div>
+                    <div class="footer_middle_subscribe">
+                        <p class="text footer_middle_subscribe_text_heading">SUBSCRIBE</p>
+                        <p class="text footer_middle_subscribe_text">FOR OUR NEWLETTER AND PROMOTION</p>
+                        <form class="input">
+                            <input type="email" class="text input_area" placeholder=" Enter Your Email">
+                            <button type="submit" class="text button">Subscribe</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer_bottom">
+            <div class="container">
+                <div class="footer_bottom_content">
+                    <p class="text footer_bottom_text">&copy; 2021 Brand All Rights Reserved.</p>
+                    <ul class="menu_list">
+                        <li><a class="icon_link" href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                        <li><a class="icon_link" href="#"><i class="fa-brands fa-instagram"></i></a>
+                        </li>
+                        <li><a class="icon_link" href="#"><i class="fa-brands fa-pinterest-p"></i></a>
+                        </li>
+                        <li><a class="icon_link" href="#"><i class="fa-brands fa-twitter"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
