@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/adfe153c5b.js" crossorigin="anonymous"></script>
-    <title>Регистрация</title>
+    <title>Корзина</title>
 </head>
 
 <body>
@@ -68,47 +68,87 @@
         </div>
         <div class="header_name">
             <div class="container">
-                <p class="text product_nav_text">Registration</p>
+                <p class="text product_nav_text">Shopping cart</p>
             </div>
         </div>
     </div>
-    <div class="container content_reg">
-        <form class="reg_form">
-            <p class="text form_heading">Your Name</p>
-            <input type="text" class="text form_text_input" placeholder="First Name">
-            <br>
-            <input type="text" class="text form_text_input" placeholder="Last Name">
-            <div class="sex">
-                <input type="radio" name="sex" class="radio_box" checked>
-                <p class="text radio_text">Male</p>
-                <input type="radio" name="sex" class="radio_box">
-                <p class="text radio_text">Female</p>
+
+    <div class="cart_content container">
+        <div class="cart_items">
+            <div class="cart_item">
+                <a href="#" class="cart_item_link">
+                    <img src="images/product3.png" class="cart_item_img" alt="Товар">
+                    <div class="cart_item_discription">
+                        <p class="text cart_item_heading"> Mango people<br>t-shirt
+                        </p>
+                        <ul class="cart_item_property">
+                            <li class="text property_text">Price: <span style="color: #F16D7F;">$300</span></li>
+                            <li class="text property_text">Color: Red</li>
+                            <li class="text property_text">Size: XL</li>
+                            <li class="text property_text">Quantity</li>
+                        </ul>
+                    </div>
+                </a>
+                <a href="#" class="cross">
+                    <img src="images/cross.png" alt="Закрыть">
+                </a>
             </div>
-            <p class="text form_heading">Login details</p>
-            <input type="email" class="text form_text_input" placeholder="Email">
-            <br>
-            <input type="password" class="text form_text_input" placeholder="Password" aria-describedby="pw-help">
-            <div id="pw-help" class="text password_help">
-                Please use 8 or more characters, with at least 1 number and a mixture of uppercase and lowercase
-                letters
+            <div class="cart_item">
+                <a href="#" class="cart_item_link">
+                    <img src="images/product7.png" class="cart_item_img" alt="Товар">
+                    <div class="cart_item_discription">
+                        <p class="text cart_item_heading"> Mango people<br>t-shirt
+                        </p>
+                        <ul class="cart_item_property">
+                            <li class="text property_text">Price <span style="color: #F16D7F;">$300</span></li>
+                            <li class="text property_text">Color: Red</li>
+                            <li class="text property_text">Size: XL</li>
+                            <li class="text property_text">Quantity</li>
+                        </ul>
+                    </div>
+                </a>
+                <a href="#" class="cross">
+                    <img src="images/cross.png" alt="Закрыть">
+                </a>
             </div>
-            <button type="submit" class="text reg_form_button">Join us<span
-                    style="margin-left: 20px;">&rarr;</span></button>
-        </form>
-        <div class="content_reg_article">
-            <p class="text content_reg_text">LOYALTY HAS ITS PERKS</p>
-            <p class="text content_reg_text">Get in on the loyalty program where you can earn points and unlock serious
-                perks. Starting
-                with these as soon as you join:</p>
-            <ul class="content_reg_li">
-                <li class="text content_reg_li_text">15% off welcome offer</li>
-                <li class="text content_reg_li_text">Free shipping, returns and exchanges on all orders </li>
-                <li class="text content_reg_li_text">$10 off a purchase on your birthday</li>
-                <li class="text content_reg_li_text">Early access to products</li>
-                <li class="text content_reg_li_text">Exclusive offers & rewards</li>
-            </ul>
+            <div class="cart_items_buttons">
+                <a href="#" class="text cart_items_button">Clear shopping cart</a>
+                <a href="#" class="text cart_items_button">Continue shopping</a>
+            </div>
         </div>
+        <div class="cart_forms">
+            <form class="shipping_form">
+                <p class="text form_heading">Shipping adress</p>
+                <input type="text" class="text form_text_input" placeholder="Russian Federation">
+                <br>
+                <input type="text" class="text form_text_input" placeholder="State">
+                <br>
+                <input type="text" class="text form_text_input" placeholder="Postcode / Zip">
+                <br>
+                <button type="submit" class="text shipping_form_button">Get a quote</button>
+            </form>
+            <div class="amount">
+                <div class="amount_type">
+                    <p class="text sub_heading">sub total <span style="margin-left: 15px;">$900</span></p>
+                    <p class="text grand_heading">grand total <span
+                            style="margin-left: 15px; color: #F16D7F;">$900</span></p>
+                </div>
+                <div class="amount_line"></div>
+                <a href="#" class="text amount_button">proceed to checkout</a>
+
+            </div>
+
+        </div>
+
     </div>
+
+
+
+
+
+
+
+
     <div class="footer">
         <div class="footer_middle">
             <div class="container">
@@ -147,6 +187,8 @@
             </div>
         </div>
     </div>
+
+
 </body>
 
 </html>
